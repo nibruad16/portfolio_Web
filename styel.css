@@ -10,74 +10,133 @@
 .hero{
     height: 100vh;
     width: 100%;
-    
-    background-image: url(imags/Daqua.jpeg);
-    background-size: cover;
+    /* background-image: url(imags/Daqua.jpeg); */
+   background:linear-gradient(rgba(15, 240, 240, 0.6) , rgb(4, 116, 131));
     background-position: center;
-}
+    background-size: cover;
+    padding: 10px 10%;
+    position: relative;
+    overflow: hidden;
+}   
 
 nav{
+    padding: 10px 0; 
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
-} 
-
-.logo{
-
-    color: white;
-    font-size: 20px;
-    padding: 10px 20px;
-    background-color: black;
-    border-radius: 100px;
 
 }
 
-
-ion-icon{
-    color: yellow;
-    
-   
+.pic{
+    width: 30px;
 }
 
-span{
-    color: yellow;
+.tit{
+    display: inline-block;
 }
 
-
-
+.tit .no{
+    max-width: 5px 5px;
+}
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    padding: 10px 20px ;
+    margin: 10px 15px;
+    
 }
 
 nav ul li a{
-    color: white;
     text-decoration: none;
-    font-size: bold;
-    font-size: 20px;
-
- 
-}
-
-nav ul li a:hover{
-    color: yellow;
-    transition: .3s;
-
-}
-
-button{
-    border: none;
-    background:black;
     color: white;
-    padding: 12px 30px;
-    border-radius: 30px;
+    font-weight: 400;
+    
 }
 
-button:hover{
-  
+.mean{
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.mean h1{
+    font-size: 70px;
     color: yellow;
+      
+
+}
+
+.mean p{
+    margin: 10px 0 30px;
+    animation-delay: 0.5s;
+}
+
+.sec {
+    padding: 15px 80px;
+    font-size: 16px;
+    
+    
+}
+.sec.anim{
+    animation-delay: 1.5s;
+}
+.footage{
+    width: 530px;
+    position: absolute;
+    bottom: 300px;
+    right: 10%;
+   
+    
+}
+.footage.anim{
+    animation-delay: 1.5s;
+
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.abouts{
+    height: 100vh;
+    width: 100%;
+    /* background-image: url(imags/Daqua.jpeg); */
+   background:linear-gradient(rgba(15, 240, 240, 0.6) , rgb(4, 116, 131));
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    position: relative;
+    overflow: hidden;
+
+
+
+}
+
+
+
+.Simg{
+    width: 300px;
+    height: 400px;
+    /* position: absolute;
+    right: 10%; */
+    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+   
+    border-color: rgba(243, 158, 0, 0.952);
+}
+
+#1{
+    border: 10px;
+    margin-top: 20px;
+
 }
