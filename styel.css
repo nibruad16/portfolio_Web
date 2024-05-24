@@ -1,142 +1,133 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-
 }
-
+:root{  
+    --p-color : #ffb223;
+    --s-color : #042c54;
+    --t-color :rgb(245, 236, 184);
+    --f-color : #013364;
+}
 .hero{
+    background-color: var(--s-color);
     height: 100vh;
     width: 100%;
-    /* background-image: url(imags/Daqua.jpeg); */
-   background:linear-gradient(rgba(15, 240, 240, 0.6) , rgb(4, 116, 131));
-    background-position: center;
-    background-size: cover;
-    padding: 10px 10%;
-    position: relative;
-    overflow: hidden;
-}   
-
-nav{
-    padding: 10px 0; 
+}
+.hero_nav{
+    color: var(--t-color);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+    background:var(--s-color);
+    filter: blur(56);
+    justify-content: space-between;
 }
-
-.pic{
-    width: 30px;
+.hero_nav h3 {
+    margin: 20px 60px;
 }
-
-.tit{
-    display: inline-block;
+.hero_nav ul{
+    list-style: none;
+    display: flex;
+    margin: 20px 60px;
 }
-
-.tit .no{
-    max-width: 5px 5px;
-}
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    margin: 10px 15px;
-    
-}
-
-nav ul li a{
+.hero_nav ul li a{
     text-decoration: none;
-    color: white;
-    font-weight: 400;
-    
+    color: var(--t-color);
+    padding: 0 3rem;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
 }
-
-.mean{
-    margin-top: 10%;
-    max-width: 600px;
+.hero_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-
-.mean h1{
-    font-size: 70px;
-    color: yellow;
-      
-
+.hero_container .hero_image{
+    margin-top: 3rem;
 }
-
-.mean p{
-    margin: 10px 0 30px;
-    animation-delay: 0.5s;
+.hero_container .hero_image img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    box-shadow:0 0 100px 10px #ffb223;
+    margin: 4rem 8rem;
 }
-
-.sec {
-    padding: 15px 80px;
-    font-size: 16px;
-    
-    
+.hero_name{
+    margin: 10rem 0;
+    padding: 5rem 0;
+    align-items: center;
 }
-.sec.anim{
-    animation-delay: 1.5s;
-}
-.footage{
-    width: 530px;
-    position: absolute;
-    bottom: 300px;
-    right: 10%;
-   
-    
-}
-.footage.anim{
-    animation-delay: 1.5s;
+.hero_name h1{
+    font-size: 5rem;
+    color: var(--t-color);
 
 }
-.anim{
-    opacity: 0;
-    transform: translateY(30px);
-    animation: moveup 0.5s linear forwards;
+.hero_name h3{
+    font-size: 3.5rem;
+    color: var(--t-color);
+    padding-bottom: 2rem;
 }
-
-@keyframes moveup{
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
+.hero_name p{
+    width: 75%;
+    color: var(--t-color);
+    font-size: 24px;
+    padding-bottom: 2rem;
 }
-
-.abouts{
+.highlight{
+    color: var(--p-color);
+}
+.hero_icons i{
+    background-color: var(--s-color);
+    color: var(--t-color);
+    font-size: 50px;
+    border-radius: 50%;
+    padding-left: 12px;
+    margin-bottom: 50px;
+}
+.hero_buttons button{
+    background-color: var(--p-color);
+    padding: 20px 30px;
+    font-size: 20px;
+    color: var(--s-color);
+    border: 1px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0px 50px 1px var(--t-color);
+}
+.about{
+    background:var(--f-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
-    width: 100%;
-    /* background-image: url(imags/Daqua.jpeg); */
-   background:linear-gradient(rgba(15, 240, 240, 0.6) , rgb(4, 116, 131));
-    background-position: center;
-    background-size: cover;
-    padding: 10px 10%;
-    position: relative;
-    overflow: hidden;
+    justify-content: center;
+}
+.about h1{
+    margin: 0  0 100px 0;
+    font-size: 60px;
+    color: var(--p-color);
+}
+.about_container{
+    border:1px solid #ffb223;
+    width: 75%;
+}
+.about_description{
+    display: flex;
+}
 
-
-
+.about_description .about_name h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 3rem;
+    color: var(--t-color);
+}
+.about_description .about_name p{
+    color: var(--t-color);
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    width: 90%;
+    line-height: 40px;
+    padding-bottom: 40px;
 }
 
 
-
-.Simg{
-    width: 300px;
-    height: 400px;
-    /* position: absolute;
-    right: 10%; */
-    
-}
-
-.box{
-    width: 100px;
-    height: 100px;
-   
-    border-color: rgba(243, 158, 0, 0.952);
-}
-
-#1{
-    border: 10px;
-    margin-top: 20px;
-
-}
