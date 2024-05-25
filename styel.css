@@ -128,7 +128,328 @@
     width: 90%;
     line-height: 40px;
     padding-bottom: 40px;
+
+}
+
+.services{
+    background:var(--s-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
     
 }
 
+.services h1{
+    margin: 100px 0 0;
+    font-size: 60px;
+    color: var(--p-color);
+}
+
+.services .services_container{
+    width: 75%;
+    margin-top: 40px;
+  
+}
+
+.services .services_container .section1{
+    display: flex;
+    justify-content: space-between;
+
+}
+.services .services_container .section1 .offer{
+    width: 300px;
+    height: 300px;
+    border: 1px solid var(--p-color);
+    margin: 30px 0  ;
+}
+
+.services .services_container .section2{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.services .services_container .section2 .offer1{
+    width: 300px;
+    height: 300px;
+    border: 1px solid var(--p-color);
+    margin: 30px 0  ;
+}
+
+
+.services .services_container .section1 .offer .offer_img img{
+   width: 80px;
+   height: 80px;
+   margin: 40px 0 20px 40px;
+
+}
+
+.services .services_container .section1 .offer .offer_description{
+    margin-left: 30px;
+    
+}
+
+.services .services_container .section1 .offer .offer_description h3{
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: var(--t-color);
+}
+.services .services_container .section1 .offer .offer_description p{
+    color: var(--t-color);
+}
+
+.services .services_container .section2 .offer1 .offer_img img{
+    width: 80px;
+    height: 80px;
+    margin: 40px 0 20px 40px;
+ 
+ }
+
+.services .services_container .section2 .offer1 .offer_description{
+    margin-left: 30px;
+    
+}
+
+.services .services_container .section2 .offer1 .offer_description h3{
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: var(--t-color);
+}
+.services .services_container .section2 .offer1 .offer_description p{
+    color: var(--t-color);
+}
+
+
+.skills {
+    background-color: var(--f-color);
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills h1{
+    margin: 50px 0 30px;
+    font-size: 60px;
+    color: var(--p-color);
+}
+
+.skills .section_container{
+
+    width: 65%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--p-color);
+    border-radius: 5%;
+
+}
+
+.skills .section_container .section_row1{
+    display: flex;
+    
+}
+
+
+.skills .section_container .section_row1 .row1_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--p-color);
+    border-radius: 10%; 
+    margin: 30px;
+    padding: 40px;
+
+}
+
+
+.skills .section_container .section_row1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+}
+
+.skills .section_container .section_row1 h3{
+
+    font-size: 30px;
+    padding-left: 10px;
+    color: var(--t-color);
+
+}
+
+
+.skills .section_container .section_row2 img{
+    width: 100px;
+    height: 100px;
+
+}
+
+
+.skills .section_container .section_row2{
+    display: flex;
+    
+}
+
+
+.skills .section_container .section_row2 .row2_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--p-color);
+    border-radius: 10%; 
+    margin: 30px;
+    padding: 40px;
+
+}
+
+
+.skills .section_container .section_row2 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+}
+
+.skills .section_container .section_row2 h3{
+
+    font-size: 30px;
+    padding-left: 10px;
+    color: var(--t-color);
+
+}
+
+
+.skills .section_container .section_row2 img{
+    width: 100px;
+    height: 100px;
+
+}
+
+.contact{
+
+    height: 100vh;
+    background-color: var(--s-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact h1{
+    text-align: center;
+    padding-bottom: 5rem;
+    color: var(--p-color);
+    font-size: 60px;
+}
+.contact_container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.contact_section {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    border: 1px solid var(--p-color);
+    height: 40rem;
+    border-radius: 20px;
+    box-shadow:0 0 30px 1px #ffb223;
+
+}
+.contact_section .contact_header{
+    align-items: center;
+    text-align: center;
+}
+.contact_section .contact_header h1{
+    font-size: 3rem;
+    color: var(--t-color);
+    padding: 20px 0;
+}
+.contact_section .contact_header p{
+    font-size: 1.3rem;
+    text-align: start;
+    color: var(--t-color);
+    padding:20px;
+}
+.contact_forms .contact_box1 {
+    display: flex;
+    width: 100%;
+    padding: 0 7px ;
+}
+.contact_forms .contact_box1 input{
+    width: 50%;
+    padding: 10px;
+    margin: 14px;
+    background: transparent;
+    border: 2px solid var(--p-color);
+    border-radius: 8px;
+    color: var(--t-color);
+    outline:none;
+}
+.contact_box2 select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--p-color);
+    background: transparent;
+    border-radius: 8px;
+    color: var(--t-color);
+}
+.contact_box2 {
+    padding: 20px;
+}
+.contact_box2 select option{
+    color: #013364;
+    background:var(--p-color);
+}
+
+.contact_box2 textarea{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid var(--p-color);
+    background: transparent;
+    border-radius: 8px;
+    color: var(--t-color);
+    outline: none;
+}
+.info_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50rem;
+}
+.contact_infos{
+    display: flex;
+    align-items: baseline;
+}
+.contact_infos i{
+    display: flex;
+    background:var(--p-color);
+    color: var(--s-color);
+    text-align: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 50%;
+    margin: 20px;
+  
+}
+.contact_infos .contact_1{
+    color: var(--t-color);
+}
+.contact_infos .contact_1 p{
+    font-size: 24px;
+    text-transform: capitalize;
+
+}
+.contact_infos .contact_1 h3{
+    font-size: 30px;
+}
 
