@@ -16,7 +16,7 @@
   
   .hero {
     background-color: var(--s-color);
-    height: 70vh;
+    height: 85vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -138,16 +138,16 @@
   }
   
   .hero_image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px 5px #6b8f9a65;
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    box-shadow: 0 0 10px 5px var(--w-color);
     margin-bottom: 2rem;
     transition: transform 0.3s ease-in-out;
   }
   
   .hero_image img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1 );
   }
   
   .hero_name h1, .hero_name h3 {
@@ -270,6 +270,13 @@
     padding: 20px;
 }
 
+.about_container:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  background-color: var(--p-color);
+  color: var(--t-color);
+  font-weight: 600;
+}
+
 .about_description .about_name {
     flex: 1 1 50%;
     padding: 20px;
@@ -365,12 +372,13 @@
     align-items: center;
     padding: 20px;
     background-color: #fff;
-    color: #000;
+    color: var(--p-color);
   }
   
   .offer:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
+    background-color: var(--p-color);
   }
   
   .offer_img img {
@@ -386,7 +394,7 @@
   }
   
   .offer_description p {
-    color: #666;
+    color: var(--s-color);
   }
   
   
@@ -471,13 +479,14 @@
 .skill_item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+    background-color: var(--p-color);
 }
 
 .skill_item img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 10px;  
 }
 
 .skill_item h3 {
@@ -487,10 +496,10 @@
 
 .skill_percentage {
     font-size: 1.2rem;
-    color: var(--p-color);
+    color: var(--s-color);
     margin-top: 10px;
     font-weight: bold;
-    animation: pulse 1.5s infinite alternate;
+    animation: pulse 1.5s infinite alternate; 
 }
 
 @keyframes pulse {
@@ -502,7 +511,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .section_row {
         flex-wrap: wrap;
         justify-content: center;
@@ -519,6 +528,13 @@
         flex: 1 0 calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
+
+    .skill_percentage {
+     animation: none;
+     font-weight: 500px;
+     font-size: 30px ;
+      
+  }
 }
 
 
@@ -594,9 +610,12 @@
 }
 
 .info_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
   width: 40%;
-  padding-left: 15%;
-  padding-top: 5%;
+  
 }
 
 .contact_info {
@@ -621,6 +640,27 @@
   color: var(--t-color);
 }
 
+
+@media(max-width: 650px){
+  .contact_container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact_section{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .info_section{
+    width: 100%;
+    padding-left: 25%;
+  }
+  
+
+
+}
+  
 
 footer {
     margin: 30px;
